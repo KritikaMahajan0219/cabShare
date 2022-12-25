@@ -8,6 +8,7 @@
 body {
   font-family: "Poppins", sans-serif;
   
+  
 }
 #logo{
   height: 38px;
@@ -26,7 +27,7 @@ body {
 }
 
 .bg-bg {
-  height: 580px;
+  
   
   
   
@@ -55,6 +56,7 @@ body {
   font-size: 16px;
   display: flex;
   flex-direction: row;
+
 }
 
 .list-data {
@@ -109,17 +111,20 @@ body {
   padding: 0 150 0 150;
 }
 
-.main-body-img-find {
-  margin: 25 0 10 259;
-  width: 380px;
-  height: 250px;
-  border-radius: 35px;
+.body-first-half {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+
+  
+  
 }
 
 .main-body-info {
   color: var(--primary-color-s3);
-  padding: 20px;
-  margin: 25 20 20 90;
+
+  
 }
 
 .publish-ride-btn {
@@ -167,9 +172,12 @@ body {
   flex-direction: row;
   padding: 0 130 0 130;
 }
-
+@keyframes example {
+  from {background-color: #186253;}
+  to {background-color: rgb(62, 174, 234);}
+}
 .findride-btn {
-  background-color: var(--primary-color-s1);
+  
   font-size: larger;
   color: #f9f9f9;
   border: none;
@@ -180,12 +188,21 @@ body {
   font-weight: 500;
   margin: 10 30 10 30;
   padding: 10px;
+  animation-name: example;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  
 }
 
-.give-space {
-  width: 100%;
-  height: 300px;
+.findride-btn:hover{
+  
 }
+
+
+
+
+
+
 
 .main-footer {
   background-color: var(--primary-color-s3);
@@ -209,8 +226,11 @@ body {
   color: white;
   font-size: 60px;
   font-weight: 900;
+
   
-  
+}
+.publish{
+  margin-right: 15px;
 }
 .smallheading{
   font-size: 20px;
@@ -227,11 +247,125 @@ body {
   position: absolute;
   top: 200px;
   right: 90px;
-  background: rgb(230, 228, 228);
+  background: rgb(241, 239, 239);
   padding: 30px;
   border-radius: 5%;
 }
 .go{
   margin-top: 20px;
+  position: relative;
+  right: -247px;
+  
+}
+
+.intro{
+  margin-top: 80px;
+  border-spacing: 100px;
+  
+}
+.acchead{
+  line-height: 10px;
+}
+.userimg{
+  margin-left: 100px;
+  height: 100px;
+  width: 100px;
+}
+
+.rating {
+  display: inline-block;
+  position: relative;
+  height: 35px;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  color: #000;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: yellow;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #000;
+  text-shadow: 0 0 5px yellow;
+}
+
+.details{
+  display:inline-block;
+  width: 50%;
+  text-align: left;
+  margin-top: 50px;
+}
+.title{
+  display: inline;
+  
+}
+.titles{
+  text-align: right;
+}
+.form{
+  display: inline-block;
+  width: 50%;
+  margin-top:35px;
+}
+.detailstable{
+  margin-top: 80px;
+  
+}
+.accfoot{
+  margin-top: 40px;
+}
+.card-img-top{
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
   
 }

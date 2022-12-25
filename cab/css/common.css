@@ -140,11 +140,11 @@ input[type="radio"] {
   z-index: 10000000;
 }
 
-/* Login Modal */
+/* Login Modal 
 #login-modal .modal-dialog {
   width: 350px;
   margin: auto;
-}
+}*/
 
 .modal-footer {
   background-color: #f4f4f4;
@@ -224,4 +224,39 @@ input[type="radio"] {
   color: #a9a9a9;
   text-align: center;
   padding-top: 24px;
+}
+.fa-solid{
+  color: #4b8d94;
+  margin-top: 300px;
+  margin-bottom: 5%;
+  
+}
+.fa-solid:hover{
+  color: #12373b;
+}
+.seat{
+  width: 150px;
+ margin-right: 50px;
+  height: 150px;
+}
+.publish-ride-btn:hover{
+background-color: white;
+}
+.sec3{
+  display:flex;
+  
+  
+  
+}
+.give-space{
+  display:flex;
+  padding: 150px;
+  padding-top: 150px;
+  justify-content: center;
+  align-items: center;
+  line-height: 40px;
+}
+.about{
+  padding: 45px;
+  padding-left: 100px;
 }
